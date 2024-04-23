@@ -1,0 +1,14 @@
+{
+  "name": "logerie.nl",
+  "version": "0.0.1",
+  "description": "It's a website",
+  "type": "module",
+  "scripts": {
+    "convert": "node ./tools/optimize-images.js"
+  },
+  "author": "J.P.Sturkenboom <justus@ju5tu5.nl>",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "sharp": "^0.33.3"
+  }
+}

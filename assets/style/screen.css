@@ -1,0 +1,367 @@
+:root {
+  /* dune */
+  --dune-900: #040302;
+  --dune-775: #1e1813;
+  --dune-675: #3d332a;
+  --dune-550: #605143;
+  --dune-450: #826f5c;
+  --dune-325: #a99078;
+  --dune-225: #d9c5b2;
+  --dune-100: #e7dcd2;
+  --dune: var(--dune-225);
+
+  /* purple */
+  --purple-900: #050303;
+  --purple-775: #231519;
+  --purple-675: #3b252c;
+  --purple-550: #6c4853;
+  --purple-450: #936372;
+  --purple-325: #ba8394;
+  --purple-225: #d0afb8;
+  --purple-100: #e7dade;
+  --purple: var(--purple-675);
+
+  /* green */
+  --green-900: #030401;
+  --green-775: #151d07;
+  --green-675: #2e3b14;
+  --green-550: #41521f;
+  --green-450: #657d33;
+  --green-325: #83a245;
+  --green-225: #a3c959;
+  --green-100: #c7ef7d;
+  --green: var(--green-550);
+
+  /* orange */
+  --orange-900: #0a0100;
+  --orange-775: #320a01;
+  --orange-675: #611900;
+  --orange-550: #932b01;
+  --orange-450: #c63c00;
+  --orange-325: #f24c00;
+  --orange-225: #fe9b7d;
+  --orange-100: #fbd4c9;
+  --orange: var(--orange-325);
+
+  /* black */
+  --black-900: #030303;
+  --black-775: #141414;
+  --black-675: #353535;
+  --black-550: #545454;
+  --black-450: #737373;
+  --black-325: #959595;
+  --black-225: #b9b9b9;
+  --black-100: #dedede;
+  --black: var(--black-775);
+
+  --white: #fafafa;
+
+  --color: var(--black);
+  --bg-top: var(--dune);
+  --bg-bottom: var(--dune-325);
+  --highlights: var(--orange);
+
+  --angle: 45deg;
+  --gap: 0.5rem;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Basics */
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+html {
+  background-color: var(--bg-fg);
+  background-image: linear-gradient(var(--angle), var(--bg-top) 20%, var(--bg-bottom) 100%);
+}
+body {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  color: var(--color);
+}
+main img {
+  background: var(--dune);
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+p {
+  /* max-width: 20rem; */
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: 99;
+}
+header img {
+  padding: var(--gap);
+  width: 4rem;
+}
+
+header nav {
+  position: absolute;
+  right: -16rem;
+  height: 100vh;
+  width: 16rem;
+  background: var(--white);
+}
+header nav ul {
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style: none;
+}
+header nav a {
+  display: block;
+  padding: var(--gap);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+main section {
+  padding: 1.2rem var(--gap);
+}
+
+section#hero {
+  padding: 0;
+  /* Why?! */
+  margin-bottom: calc(-1 * var(--gap));
+}
+#hero img {
+  width: 100vw;
+}
+
+section#hotel-bed-and-breakfast {
+  background: var(--purple);
+  color: var(--dune);
+}
+
+section#groepsaccommodatie {
+  background: var(--green-675);
+  color: var(--dune);
+}
+
+/* KAMERS */
+#onze-kamers {
+  background: var(--purple);
+  color: var(--dune);
+}
+#onze-kamers > div {
+  margin-top: var(--gap);
+  margin-left: calc(-1 * var(--gap));
+  margin-right: calc(-1 * var(--gap));
+  overflow-x: scroll;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--gap);
+}
+#onze-kamers h3 {
+  position: sticky;
+  left: var(--gap);
+  width: fit-content;
+}
+#onze-kamers article div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--gap);
+}
+#onze-kamers article div img {
+  width: 80vw;
+}
+#onze-kamers article:first-of-type {
+  padding-left: var(--gap);
+}
+#onze-kamers article:last-of-type {
+  padding-right: var(--gap);
+}
+
+/* OMGEVING */
+#de-omgeving {
+}
+
+footer {
+  position: sticky;
+  width: 100vw;
+  height: 18rem;
+  bottom: -16rem;
+  left: 0;
+  right: 0;
+  background: var(--green-900);
+  color: var(--white);
+}
+footer nav {
+  background: var(--green);
+  padding-right: var(--gap);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--gap);
+  height: 2rem;
+}
+footer nav ul,
+footer nav ul li {
+  display: contents;
+}
+footer nav li:first-of-type a {
+  display: block;
+  padding: 0 0.5rem;
+  background: var(--orange);
+  color: var(--black);
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+footer .directions {
+  color: var(--dune);
+}
+footer .map,
+footer .address {
+  padding: var(--gap);
+}
+footer .directions h2,
+footer .directions p {
+  margin-bottom: var(--gap);
+}
+footer .directions p {
+  max-width: 18rem;
+}
+footer div.org {
+  font-weight: bold;
+}
+footer div.adr {
+  margin-bottom: var(--gap);
+}
+
+/* Ken Burns style slideshow */
+/*
+section.slideshow {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+}
+section.slideshow img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  animation: kenburns 60s linear infinite;
+  opacity: 1;
+  transform: scale(1.2);
+}
+@media (prefers-reduced-motion) {
+  section.slideshow img {
+    animation-duration: 120s;
+  }
+}
+section.slideshow img:nth-child(1) {
+  animation-name: kenburns;
+  z-index: 3;
+}
+section.slideshow img:nth-child(2) {
+  animation-name: kenburns-2;
+  z-index: 2;
+}
+section.slideshow img:nth-child(3) {
+  animation-name: kenburns-3;
+  z-index: 1;
+}
+section.slideshow img:nth-child(4) {
+  animation-name: kenburns-4;
+  z-index: 0;
+}
+
+@keyframes kenburns {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  98.4375% {
+    opacity: 0;
+    transform: scale(1.21176);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+@keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+*/

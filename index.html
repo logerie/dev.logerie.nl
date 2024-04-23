@@ -1,796 +1,611 @@
 <!DOCTYPE html>
+<!--   ,gggg,
+      d8" "8I
+      88  ,dP
+   8888888P"                                                gg
+      88                                                    ""
+      88          ,ggggg,    ,gggg,gg   ,ggg,    ,gggggg,   gg    ,ggg,
+ ,aa,_88         dP"  "Y8gggdP"  "Y8I  i8" "8i   dP""""8I   88   i8" "8i
+dP" "88P        i8'    ,8I i8'    ,8I  I8, ,8I  ,8'    8I   88   I8, ,8I
+Yb,_,d88b,,_   ,d8,   ,d8',d8,   ,d8I  `YbadP' ,dP     Y8,_,88,_ `YbadP'
+ "Y8P"  "Y88888P"Y8888P"  P"Y8888P"888888P"Y8888P      `Y88P""Y8888P"Y888
+Welkom op de site van de Logerie ,d8I' Hotel en Bed & Breakfast in de
+Noord-Hollandse stad Enkhuizen ,dP'8I Deze website is gemaakt door onze
+menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
+                              I8   8I
+                              `8, ,8I
+                               `Y8P"
+-->
 <html lang="nl">
-<!--_=======_======================_=====
- __| |___  | |   ___  __ _ ___ _ _(_)___
-/ _` / -_) | |__/ _ \/ _` / -_) '_| / -_)
-\__,_\___| |____\___/\__, \___|_| |_\___|
-=====================|___/============-->
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De Logerie &middot; Hotel &middot; Bed &amp; Breakfast te Enkhuizen</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De Logerie &middot; Hotel &middot; Bed &amp; Breakfast in Enkhuizen</title>
 
-  <meta name="description" content="Logerie Bed &amp; Breakfast" />
-  <meta name="keywords" content="Logerie Bed &amp; Breakfast, Logerie Groepsaccomodatie, gastenverblijf, " />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="J.P. Sturkenboom <justus@ju5tu5.nl>" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,400italic|Oswald:300&subset=latin,latin-ext" />
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <link rel="canonical" href="https://logerie.nl/" />
+    <!-- <meta name="color-scheme" content="light dark" /> -->
+    <link rel="icon" href="/assets/image/logerie-logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/style/screen.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="./assets/style/print.css" />
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <div class="logo hidden-phone">
-          <a href="#top">
-            <img src="img/logo.png" alt="De Logerie &middot; Bed &amp; Breakfast te Enkhuizen" />
-          </a>
-        </div>
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content="Logerie Bed &amp; Breakfast" />
+    <meta name="description" content="Logerie Bed &amp; Breakfast te Enkhuizen" />
+    <meta name="keywords" content="Logerie, bed &amp; breakfast,  groepsaccomodatie, gastenverblijf" />
+    <meta name="language" content="Dutch" />
 
-        <ul class="lang">
-          <li><a href="index.html" id="nl" title="Kies Nederlands"><span>nl</span></a></li>
-          <li><a href="index_en.html" id="en" title="Choose English"><span>en</span></a></li>
-        </ul>
-
-        <ul class="nav">
-          <li><a href="#welkom">Welkom</a></li>
-          <li><a href="#bedandbreakfast">Hotel &middot; Bed &amp; Breakfast</a></li>
-          <li><a href="#groepsaccommodatie">Groepsaccommodatie</a></li>
-          <li><a href="#impressie">Impressie</a></li>
-          <li><a href="#recensies">Recensies</a></li>
-          <li><a href="#omgeving">Omgeving</a></li>
+    <meta property="og:url" content="https://logerie.nl" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header>
+      <h1 class="visually-hidden">Welkom bij de Logerie! Hotel, Bed & Breakfast in Enkhuizen</h1>
+      <a href="#top">
+        <img src="/assets/image/logerie-logo.svg" width="150" alt="De Logerie Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hotel-bed-and-breakfast">Hotel &middot; Bed & Breakfast</a></li>
+          <li><a href="#groepsaccomodatie">Groepsaccommodatie</a></li>
+          <li><a href="#onze-kamers">Onze kamers</a></li>
+          <li><a href="#de-omgeving">De omgeving</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </div>
-  </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <img
+          alt="De gedekte eettafel en doorkijk naar de zitruimte van de Logerie."
+          src="./assets/image/optimized/SB_24_5848_medium.jpg"
+          srcset="
+            ./assets/image/optimized/SB_24_5848_small.avif   500w,
+            ./assets/image/optimized/SB_24_5848_medium.avif 1000w,
+            ./assets/image/optimized/SB_24_5848_large.avif  1500w,
+            ./assets/image/optimized/SB_24_5848.avif        2000w
+          "
+          sizes="
+            (max-width: 500px) 500px,
+            (max-width: 1000px) 1000px,
+            (max-width: 1500px) 1500px,
+            (max-width: 2000px) 2000px
+          " />
+      </section>
 
-  <!-- Carousel -->
-  <div id="moodsetter" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="active item"><img src="img/buitenaanzichtkleur.jpg" alt="De Logerie &middot; Bed &amp; Breakfast te Enkhuizen"></div>
-      <div class="item"><img src="img/buitenaanzicht2kleur.jpg" alt="De Logerie &middot; Bed &amp; Breakfast te Enkhuizen"></div>
-      <div class="item"><img src="img/buitenaanzicht3kleur.jpg" alt="De Logerie &middot; Bed &amp; Breakfast te Enkhuizen"></div>
-      <div class="item"><img src="img/buitenaanzicht4kleur.jpg" alt="De Logerie &middot; Bed &amp; Breakfast te Enkhuizen"></div>
-    </div>
-
-    <a class="carousel-control left" href="#moodsetter" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#moodsetter" data-slide="next">&rsaquo;</a>
-  </div>
-
-  <!-- Address -->
-  <div class="address">
-    <div class="address-inner">
-      <div class="container">
-        <div class="vcard">
-          <div class="hidden-phone">
-            <div class="org">De Logerie</div>
-            <div class="adr">
-              <div class="street-address">De Gouw 46e</div>
-              <span class="postal-code">1602 DN</span>
-              <span class="locality">Enkhuizen</span>
-            </div>
-          </div>
-          <div class="pull-right">
-            <a class="email" href="mailto:info@logerie.nl">info@logerie.nl</a>
-            <div class="tel">+31 (0)6 442 967 13</div>
-          </div>
+      <section id="hotel-bed-and-breakfast">
+        <div>
+          <h2>Hotel &middot; Bed & Breakfast</h2>
+          <p>
+            Ervaar de rust en rijkdom van het West-Friese platteland gecombineerd met Bourgondische gastvrijheid bij De
+            Logerie. Deze luxe bed and breakfast is gelegen aan de rand van Enkhuizen en biedt het comfort van een
+            drie/vier sterren hotel. De ruime en elegante kamers voorzien van privé badkamer hebben uitzicht op de mooi
+            aangelegde tuin en het Streekbos. Door de unieke ligging in het Noord-Hollandse landschap en het hart van
+            Seed Valley is De Logerie het ideale vertrekpunt voor wandel en fietstochten of het verkennen van de
+            omgeving. Iedere morgen kunt u in de ontbijtzaal genieten van een gevarieerd vers ontbijt buffet. Naast
+            gratis gebruik van Wi-Fi in het gehele pand kunt u op eigen terrein vrij parkeren en fietsen stallen.
+          </p>
+          <p>Wij kijken er naar uit u welkom te heten bij De Logerie.</p>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <!-- Welcome -->
-    <div class="row" id="welkom">
-      <div class="span12">
-        <h1><span class="delogerie">Hotel De Logerie</span> – Bourgondische gastvrijheid op het West-Friese platteland</h1>
-        <p>Ervaar de rust en rijkdom van het West-Friese platteland gecombineerd met Bourgondische gastvrijheid bij De Logerie. Deze luxe bed and breakfast is gelegen aan de rand van Enkhuizen en biedt het comfort van een drie/vier sterren hotel. De ruime
-          en elegante kamers voorzien van privé badkamer hebben uitzicht op de mooi aangelegde tuin en het Streekbos. Door de unieke ligging in het Noord-Hollandse landschap en het hart van Seed Valley is De Logerie het ideale vertrekpunt voor wandel
-          en fietstochten of het verkennen van de omgeving. Iedere morgen kunt u in de ontbijtzaal genieten van een gevarieerd vers ontbijt buffet. Naast gratis gebruik van Wi-Fi in het gehele pand kunt u op eigen terrein vrij parkeren en fietsen stallen.</p>
-        <p>Wij kijken er naar uit u welkom te heten bij De Logerie.</p>
-      </div>
-    </div>
-
-    <!-- Bed and Breakfast -->
-    <div id="bedandbreakfast">
-      <div class="row">
-        <div class="span12">
-          <h1><span>Hotel &middot; Bed &amp; Breakfast</span></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span7">
-          <h2>De Kamers</h2>
-          <p>De bloemen van de tuinderij zijn de inspiratiebron voor de inrichting van de vijf luxe kamers van De Logerie. Alle kamers zijn ruim van opzet en beschikken over een privé badkamer met douche of bad, toilet, wastafel, föhn, handdoek set en toiletartikelen.
-            Heerlijk zachte boxspring bedden van 90 x 210 zorgen ervoor dat u we uitgerust en ontspannen de dag kan beginnen. De vijf stijlvolle kamers hebben naast de luxe boxspring bedden uitzicht op het bos, goed verlichte werktafel, zithoek, flatscreen
-            televisie en toegang tot draadloos internet. Met een heerlijk ontbijt van vers afgebakken brood, vers geperste jus d’ orange, divers beleg, eigen gemaakte jam, melk, yoghurt, muesli en kakelverse eieren zorgen wij dat uw verblijf zo perfect
-            mogelijk is.</p>
-        </div>
-        <div class="span5">
-          <h2>Faciliteiten</h2>
-          <ul>
-            <li>5 luxe kamers</li>
-            <li>Kosteloos gebruik van de koffie en thee tijdens het verblijf</li>
-            <li>Gratis draadloos internet in het gehele Hotel en op de kamers
-              <li>Fiets- en wandelroutes</li>
-              <li>Buiten terras</li>
-              <li>Overdekte fietsenstalling</li>
-              <li>Sfeervolle eetzaal</li>
-              <li>Rookvrije kamers</li>
-              <li>Gratis parkeren op eigen terrein</li>
-              <li>Diverse spelletjes</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <h2>Tarieven</h2>
+        <div>
+          <h2>Tarieven 2024</h2>
           <p>Onderstaande tarieven zijn per nacht per kamer op basis van logies en ontbijt.</p>
 
           <table class="prices">
             <tbody>
               <tr>
-                <td>Eenpersoonskamer</td>
-                <td class="currency_symbol">&euro;</td>
-                <td class="price">92,50</td>
+                <th>Eenpersoonskamer</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">99,-</td>
               </tr>
               <tr>
-                <td>Tweepersoonskamer</td>
-                <td class="currency_symbol">&euro;</td>
-                <td class="price">110,-&nbsp;&nbsp;</td>
+                <th>Tweepersoonskamer</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">118,-</td>
               </tr>
               <tr>
-                <td>Driepersoonskamer</td>
-                <td class="currency_symbol">&euro;</td>
-                <td class="price">145,-&nbsp;&nbsp;</td>
+                <th>Driepersoonskamer</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">149,-</td>
               </tr>
               <tr>
-                <td>Vierpersoonskamer</td>
-                <td class="currency_symbol">&euro;</td>
-                <td class="price">175,-&nbsp;&nbsp;</td>
+                <th>Vierpersoonskamer</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">175,-</td>
               </tr>
             </tbody>
           </table>
 
-          <p>Tarieven zijn inclusief:<br /> Luxe ontbijt, bed en badlinnen, toiletartikelen, dagelijkse schoonmaak van de kamer en gratis thee en/of koffie gedurende het verblijf</p>
-          <p>Tarieven zijn exclusief:<br /> Toeristenbelasting &aacute; &euro; 2,25 p.p.p.n en gebruik van de keuken</p>
-          <br />
+          <p>
+            Tarieven zijn inclusief: Luxe ontbijt, bed en badlinnen, toiletartikelen, dagelijkse schoonmaak van de kamer
+            en gratis thee en/of koffie gedurende het verblijf
+          </p>
+          <p>Tarieven zijn exclusief: Toeristenbelasting &aacute; € 2,75 p.p.p.n en gebruik van de keuken</p>
+        </div>
 
-          <!-- booking.com button -->
-          <!--a href="http://www.booking.com/hotel/nl/de-logerie.html?aid=330843;lang=nl" class="book_button"><span>Reserveer B&amp;B</span></a-->
-        </div>
-      </div>
-    </div>
+        <p>Foto's</p>
+      </section>
 
-    <!-- Groups -->
-    <div id="groepsaccommodatie">
-      <div class="row">
-        <div class="span12">
-          <h1><span>Groepsaccommodatie</span></h1>
+      <section id="groepsaccommodatie">
+        <div>
+          <h2>Groepsaccommodatie</h2>
+          <p>
+            De logerie is geschikt voor groepen tot maximaal 16 personen. De accommodatie is ruim van opzet en omvat een
+            vijftal slaapkamers, allen voorzien van een eigen badkamer.
+          </p>
+          <p>
+            De gezellige gemeenschappelijke ruimte is voorzien van open keuken en grote eiken eettafel waar u met zijn
+            allen aan kunt zitten. Middels openslaande tuindeuren heeft u toegang tot het fraai aangelegde terras en de
+            grote aangrenzende tuin langs de bosrand.
+          </p>
+          <p>
+            De omgeving biedt een diversiteit aan bezienswaardigheden zoals het Zuiderzeemuseum, Sprookjeswonderland en
+            de VOC steden Enkhuizen en Hoorn.
+          </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="span5">
-          <h2>De accommodatie</h2>
-          <p>De logerie is geschikt voor groepen tot maximaal 14 personen. De accommodatie is ruim van opzet en omvat een vijftal slaapkamers, allen voorzien van een eigen badkamer.</p>
-          <p>De gezellige gemeenschappelijke ruimte is voorzien van open keuken en grote eiken eettafel waar u met zijn allen aan kunt zitten. Middels openslaande tuindeuren heeft u toegang tot het fraai aangelegde terras en de grote aangrenzende tuin langs
-            de bosrand.</p>
-          <p>De omgeving biedt een diversiteit aan bezienswaardigheden zoals het Zuiderzeemuseum, Sprookjeswonderland en de VOC steden Enkhuizen en Hoorn.</p>
-        </div>
-        <div class="span7">
+
+        <div>
           <h2>Faciliteiten</h2>
-          <p>Op de begane grond vindt u een gemeenschappelijke ruimte met open keuken waar u gezellig samen kunt eten en samen zijn. Deze gemeenschappelijke ruimte is voorzien van een robuuste eikenhouten eettafel waar u met zijn veertienen aan kunt zitten.
-            De keuken is voorzien van 5 pits gasfornuis, vaatwasser, combimagnetron, koelkast en grote oven.</p>
-          <p>De Logerie is geheel rookvrij. De kamers zijn voorzien van luxe boxspring bedden van 90 x 210 en kunnen zowel aan elkaar of van elkaar af worden geplaatst. Elke kamer heeft een eigen badkamer met toilet, wastafel, douche en/of bad een comfortabele
-            zithoek en een flat screen kleuren televisie.</p>
-          <p>Op aanvraag is er voor de kleintjes de mogelijkheid om een kinderbedje en kinderstoel bij te plaatsen. Het ruime terras bied voor iedereen plaats en is er de mogelijkheid om te Barbecue&euml;n.</p>
+          <p>
+            Op de begane grond vindt u een gemeenschappelijke ruimte met open keuken waar u gezellig samen kunt eten en
+            samen zijn. Deze gemeenschappelijke ruimte is voorzien van een robuuste eikenhouten eettafel waar u met zijn
+            veertienen aan kunt zitten. De keuken is voorzien van 5 pits gasfornuis, vaatwasser, combimagnetron,
+            koelkast en grote oven.
+          </p>
+          <p>
+            De Logerie is geheel rookvrij. De kamers zijn voorzien van luxe boxspring bedden van 90 x 210 en kunnen
+            zowel aan elkaar of van elkaar af worden geplaatst. Elke kamer heeft een eigen badkamer met toilet,
+            wastafel, douche en/of bad een comfortabele zithoek en een flat screen kleuren televisie.
+          </p>
+          <p>
+            Op aanvraag is er voor de kleintjes de mogelijkheid om een kinderbedje en kinderstoel bij te plaatsen. Het
+            ruime terras bied voor iedereen plaats en is er de mogelijkheid om te Barbecue&euml;n.
+          </p>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="span12">
-          <h2>Tarieven</h2>
-          <p>Onderstaande tarieven zijn op basis van 10 personen. 11e tot 14e persoon &euro; 25,- p.p.p.n extra</p>
+        <div>
+          <h2>Tarieven 2024</h2>
+          <p>Onderstaande tarieven zijn op basis van 10 personen. 11e tot 14e persoon &euro; 35,- p.p.p.n extra</p>
 
           <table class="prices">
             <tbody>
               <tr>
-                <th></th>
-                <th colspan="2" class="highseason">Hoogseizoen<br/>(2 apr - 1 nov)</th>
-                <th colspan="2" class="lowseason">Laagseizoen<br/></th>
+                <th>Weekend (vr. 15.00 - zo. 12.00)<sup>*</sup></th>
+                <td class="currency_symbol">€</td>
+                <td class="price">1397,50</td>
               </tr>
               <tr>
-                <td>Weekend (vr. 15.00 - zo. 12.00)</td>
-                <td class="currency_symbol highseason">&euro;</td>
-                <td class="price highseason">1392,50</td>
-                <td class="currency_symbol lowseason">&euro;</td>
-                <td class="price lowseason">1100,-</td>
+                <th>Lang weekend (vr. 15.00 - ma. 11.00)</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">1485,-</td>
               </tr>
               <tr>
-                <td>Lang weekend (vr. 15.00 - ma. 11.00)</td>
-                <td class="currency_symbol highseason">&euro;</td>
-                <td class="price highseason">1397,50</td>
-                <td class="currency_symbol lowseason">&euro;</td>
-                <td class="price lowseason">1365,-</td>
+                <th>Midweek (ma. 15.00 - vr. 11.00)</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">1904,-</td>
               </tr>
               <tr>
-                <td>Midweek (ma. 15.00 - vr. 11.00)</td>
-                <td class="currency_symbol highseason">&euro;</td>
-                <td class="price highseason">1550,-</td>
-                <td class="currency_symbol lowseason">&euro;</td>
-                <td class="price lowseason">1400,-</td>
+                <th>Week</th>
+                <td class="currency_symbol">€</td>
+                <td class="price">2945,-</td>
               </tr>
               <tr>
-                <td>Week</td>
-                <td class="currency_symbol highseason">&euro;</td>
-                <td class="price highseason">2650,-</td>
-                <td class="currency_symbol lowseason">&euro;</td>
-                <td class="price lowseason">2430,-</td>
+                <td colspan="3"><sup>*</sup> alleen te boeken in het laagseizoen, november t/m maart</td>
               </tr>
             </tbody>
           </table>
 
-          <p>Tarieven zijn inclusief:<br /> Bedlinnen, 1 set badlinnen (extra badlinnen &euro; 4,- per set), water/ elektra, schoonmaakkosten en gebruik van de keuken</p>
+          <p>
+            Tarieven zijn inclusief: Bedlinnen, 1 set badlinnen (extra badlinnen € 4,- per set), water/ elektra,
+            schoonmaakkosten en gebruik van de keuken
+          </p>
 
-          <p>Tarieven zijn exclusief:<br /> Gas (&euro; 1.20/m3), toeristenbelasting &aacute; &euro; 2,25 p.p.p.n, eventuele feestdagentoeslag en borg</p>
-          <br />
+          <p>
+            Tarieven zijn exclusief: Gas, toeristenbelasting &aacute; € 2,75 p.p.p.n, eventuele feestdagentoeslag en
+            borg a € 200
+          </p>
+        </div>
+        <p>Foto's</p>
+      </section>
 
-          <h2>Beschikbaarheidskalender groepsaccommodatie</h2>
-          <ul>
-            <li>Is een dag of een dagdeel lichtgroen gekleurd, dan is onze groepsaccommodatie nog beschikbaar.</li>
-            <li>Is een dag oranje gekleurd, dan zijn wij helaas al bezet.</li>
-            <li>Voor vragen of reserveringen vult u het formulier onder aan de pagina in.</li>
-          </ul>
+      <section id="onze-kamers">
+        <h2>Vijf luxe kamers</h2>
+        <p>
+          De bloemen van de tuinderij zijn de inspiratiebron voor de inrichting van de vijf luxe kamers van De Logerie.
+          Alle kamers zijn ruim van opzet, hebben een kleine zithoek, een bureau en beschikken over een privé badkamer
+          met douche of bad, toilet, wastafel, en föhn.
+        </p>
+        <div>
+          <article class="room">
+            <h3>Alchemilla</h3>
+            <div>
+              <img
+                alt="Alchemilla bed en zithoek"
+                src="./assets/image/optimized/SB_24_6036_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6036_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6036_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6036_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6036.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                " />
+              <img
+                alt="Alchemilla bureau en tuindeuren"
+                src="./assets/image/optimized/SB_24_6046_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6046_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6046_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6046_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6046.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                " />
+              <img
+                alt="Alchemilla kledingrek bed en bureau"
+                src="./assets/image/optimized/SB_24_6049_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6049_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6049_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6049_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6049.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+            </div>
+          </article>
 
-          <iframe src="https://dashboard.vakantieadressen.nl/widget/2230/6034dd6184477" width="100%" id="calender" height="600" frameborder="0" scrolling="no"></iframe>
-          <!-- <iframe src="http://www.groepsaccommodatie.name/beheerpanel/includes/calender.php?id=329e6581efbc90bd92a1f22c4ba2103d&amp;style=http://www.logerie.nl/css/cal.css" width="100%" id="calender" frameborder="0" scrolling="no"></iframe> -->
+          <article class="room">
+            <h3>Blue Magic</h3>
+            <div>
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6064_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6064_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6064_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6064_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6064.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6073_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6073_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6073_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6073_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6073.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6083_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6083_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6083_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6083_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6083.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+            </div>
+          </article>
+
+          <article class="room">
+            <h3>Polar Ice</h3>
+            <div>
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6171_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6171_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6171_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6171_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6171.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6186_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6186_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6186_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6186_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6186.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6179_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6179_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6179_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6179_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6179.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+            </div>
+          </article>
+
+          <article class="room">
+            <h3>Duchesse</h3>
+            <div>
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6134_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6134_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6134_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6134_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6134.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6141_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6141_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6141_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6141_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6141.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6144_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6144_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6144_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6144_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6144.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+            </div>
+          </article>
+
+          <article class="room">
+            <h3>Red Charm</h3>
+            <div>
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6106_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6106_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6106_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6106_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6106.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6110_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6110_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6110_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6110_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6110.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+              <img
+                alt="..."
+                src="./assets/image/optimized/SB_24_6095_medium.jpg"
+                srcset="
+                  ./assets/image/optimized/SB_24_6095_small.avif   500w,
+                  ./assets/image/optimized/SB_24_6095_medium.avif 1000w,
+                  ./assets/image/optimized/SB_24_6095_large.avif  1500w,
+                  ./assets/image/optimized/SB_24_6095.avif        2000w
+                "
+                sizes="
+                  (max-width: 500px) 500px,
+                  (max-width: 1000px) 1000px,
+                  (max-width: 1500px) 1500px,
+                  (max-width: 2000px) 2000px
+                "
+                loading="lazy" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="de-omgeving">
+        <h2>Enkhuizen en omgeving</h2>
+        <p>
+          Door haar VOC historie zijn er in de stad Enkhuizen veel interessante historische bezienswaardigheden.
+          Enkhuizen is ook ideaal als uitvalsbasis voor het bezoeken van Bataviastad of de Bataviawerf in Lelystad, de
+          historische stad Hoorn, de kaasmarkt in Alkmaar of de vissersdorpen Volendam, Marken of Edam.
+        </p>
+        <article>
+          <h3>Streekbos</h3>
+          <p>
+            Naast De Logerie ligt recreatiegebied Het Streekbos waar u kunt zwemmen, varen, vissen, wandelen, fietsen,
+            eten en drinken of naar de sterren kijken in het planetarium.
+          </p>
+          <a href="https://recreatieschapwestfriesland.nl/">recreatieschapwestfriesland.nl</a>
+          <a href="https://www.volkssterrenwachtorion.nl/">volkssterrenwachtorion.nl</a>
+        </article>
+
+        <article>
+          <h3>Zuiderzee museum</h3>
+          <p>
+            Het openluchtmuseum laat je zien, horen, proeven en voelen hoe de mensen in het Zuiderzee gebeid leefde van
+            ongeveer 1880 tot 1930.
+          </p>
+          <a href="https://www.zuiderzeemuseum.nl/">zuiderzeemuseum.nl</a>
+        </article>
+
+        <article>
+          <h3>Sprookjeswonderland</h3>
+          <p>
+            Naast een wandeltocht langs allerlei sprookjes is er in dit fantasiepark een kinderboerderij, een kasteel
+            met de voorstelling Violinde, een speeltuin, dobberbootjes, een doolhof, volières en nog veel meer.
+          </p>
+          <a href="https://sprookjeswonderland.nl/">sprookjeswonderland.nl</a>
+        </article>
+
+        <article>
+          <h3>Historische Driekhoek</h3>
+          <p>Ontdek de historische Zuiderzee met de historische stoomtreinlijn.</p>
+          <a href="https://www.stoomtram.nl/">stoomtram.nl</a>
+        </article>
+
+        <article>
+          <h3>Fiets en wandelroutes</h3>
+          <p>De Westfriese Omringdijk een prachtig 126 km lang lint door het Noord-Hollandse landschap.</p>
+          <a href="https://www.hollandbovenamsterdam.com/westfriesland">hollandbovenamsterdam.com</a>
+          <a href="https://www.visitenkhuizen.nl/">visitenkhuizen.nl</a>
+          <a href="https://www.routeyou.com/">routeyou.com</a>
+        </article>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="mailto:info@logerie.nl?subject=Reservering&body=Geef a.u.b aantal personen en gewenst aantal kamers door, en natuurlijk de datum."
+              >Reserveren</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@logerie.nl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-labelledby="mailTitle"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentcolor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="-1 -1 24 24">
+                <title id="mailTitle">Stel een vraag via email...</title>
+                <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+31644296713">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-labelledby="phoneTitle"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentcolor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="-1 -1 24 24">
+                <title id="phoneTitle">Stel een vraag via de telefoon...</title>
+                <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="directions">
+        <div class="map"></div>
+        <div class="address">
+          <h2>Contactgegevens</h2>
+          <p>Heeft u vragen of wilt u bij ons boeken? U kunt altijd contact met ons opnemen.</p>
+          <address>
+            <div class="vcard">
+              <div class="org">De Logerie</div>
+              <div class="adr">
+                <div class="street-address">De Gouw 46e</div>
+                <span class="postal-code">1602 DN</span>
+                <span class="locality">Enkhuizen</span>
+              </div>
+              <a class="email" href="mailto:info@logerie.nl">info@logerie.nl</a>
+              <div class="tel"><a href="tel:+31644296713">+31(0)6 442 967 13</a></div>
+            </div>
+          </address>
         </div>
       </div>
-    </div>
-
-    <!-- Impression -->
-    <div id="impressie">
-      <div class="row">
-        <div class="span12">
-          <h1><span>Impressie</span></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span12">
-          <ul class="thumbnails">
-            <li>
-              <a href="img/1_Duchesse.jpg" title="Duchesse kamer" id="tn1" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/2_RedCharm.jpg" title="RedCharm kamer" id="tn2" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/3_eetzaal.jpg" title="De Eetzaal" id="tn3" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/4_servies.jpg" title="Het Servies" id="tn4" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/5_tuin.jpg" title="De Tuin" id="tn5" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/6_stoelenbloemen.jpg" title="Stoel en Bloemen" id="tn6" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/7_strobalen.jpg" title="Strobalen op het land" id="tn7" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/8_PolarIce.jpg" title="Polarice kamer" id="tn8" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/9_tuin.jpg" title="De Tuin" id="tn9" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/10_Logerie_buiten.jpg" title="" id="tn10" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/11_BlueMagic.jpg" title="" id="tn11" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/12_alchemilla.jpg" title="" id="tn12" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/13_logerie.jpg" title="" id="tn13" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/14_badkamer.jpg" title="" id="tn14" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/15_tuin.jpg" title="" id="tn15" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/16_tuin.jpg" title="" id="tn16" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/17_Duchesse.jpg" title="" id="tn17" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/18_tuin.jpg" title="" id="tn18" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/19_logeriebuiten.jpg" title="" id="tn19" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/20_redcharm.jpg" title="" id="tn20" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/21_agaphantus.jpg" title="" id="tn21" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/22_polarice.jpg" title="" id="tn22" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/23_zitruimte.jpg" title="" id="tn23" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-            <li>
-              <a href="img/24_zitruimte.jpg" title="" id="tn24" class="fancybox thumbnail" rel="logerie"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Testimonials -->
-    <div id="recensies">
-      <div class="row">
-        <div class="span12">
-          <h1><span>Recensies</span></h1>
-        </div>
-      </div>
-
-      <div id="recensies-carousel" class="carousel slide">
-        <div class="carousel-inner">
-          <!-- Page 0 -->
-          <div class="row item active">
-            <div class="offset1 span10 recensie">
-              <p>Wij willen een groot compliment geven aan de dames van de Logerie. Bij het reserveren hadden we al een heel goed gevoel (we werden zeer gastvrij en uitgebreid te woord gestaan) en terecht want klantvriendelijk zijn hebben deze dames zeer
-                hoog in het vaandel staan. Het was een prima logeerplek voor ons, (drie vriendinnen) en we voelden ons zeer welkom. Bij onze iets te vroege aankomst, was de verse appeltaart bijna klaar. De kamer was heerlijk fris en schoon met hele fijne
-                bedden. Van alle kanten kregen we het gevoel, dat men het ons naar de zin wilde maken .Voor de avond werd een taxi geregeld en ook diverse prima adresjes genoemd, om lekker te kunnen eten. Het ontbijt was zeer uitgebreid met lekkere verse
-                broodjes, jus en allerlei beleg, ook de eieren werden niet vergeten, uitstekend verzorgd. Wij vonden het nu al een geweldige plek maar geloven dat het in de bloementijd nog een heel ander verhaal is, dus moeten we er zeker over nadenken
-                om dan eens terug te komen, wij bevelen jullie zeker aan. Veel succes en misschien tot ziens.</p>
-              <p><strong>Vriendelijke groeten Annie, Yvonne en Marianne uit het OOsten en het Westen van het land</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 1 -->
-          <div class="row item">
-            <div class="offset1 span4 recensie">
-              <p>Your B&amp;B is very nice and relaxing. Thank you for your kind and good hospitality. We felt farmers among farmers and friends! At any time in Israel please contact us in advance. All the best</p>
-              <p><strong>Mira &amp; Avi, Pran, Arava, Israel (Koren)<br />Varda &amp; Israel, Givataim, Israel (Shaham)</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>We hebben heerlijk geslapen en ontbeten in jullie mooie bed and breakfast. Hartelijk bedankt
-                <p>
-                  <p><strong>Marchien, Mirjam en Liona</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Een prachtige B&amp;B in hartelijke huiselijke sfeer. Prima, ruime kamers, een uitgebreid en heerlijk ontbijt. De gastvrouw is een echte gastvrouw. Vriendelijk, hartelijk en hulpvaardig die tevens graag een praatje maakt met haar gasten.
-                Een aanrader, deze B&amp;B, verdient een dikke pluim!</p>
-              <p><strong>Wietze en Hinke de Haan, Surhuisterveen</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 2 -->
-          <div class="row item">
-            <div class="offset1 span2 recensie">
-              <p>Wij sluiten ons geheel bij de vorige schrijver uit Dieren aan!</p>
-              <p><strong>Hoogland-Hemperius</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Een ruime onberispelijke kamer, een heerlijk ontbijt en een hartelijke charmante gastvrouw. Voor ons: eenmaal de Logerie, altijd de Logerie</p>
-              <p><strong>Ineke en Adriaan Dolk, Dieren</strong></p>
-            </div>
-
-            <div class="span5 recensie">
-              <p>Ontvangen worden door een allerhartelijkste gastvrouw en.... de kroon op de B&amp;B.... de beeldige kamer en huiskamer! Een cadeautje. Bovendien genoten van een rijk ontbijt. Een adres om door te geven. Hartelijk dank.</p>
-              <p><strong>Han Offermans en Lia de Jong, Roozendaal</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 3 -->
-          <div class="row item">
-            <div class="offset1 span2 recensie">
-              <p>Een perfect adres om te overnachten in Enkhuizen. Wat hebben jullie het goed aangepakt. Bedankt voor de gastvrijheid.
-                <p>
-                  <p><strong>Jeroen en Willeke</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>Genoten van het feest, van de prachtige B&amp;B, heel mooie realisatie. Proficiat. We komen terug
-                <p>
-                  <p><strong>Ignace en Bea</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Lut 60 jaar! Prachtig project "de Logerie" en heel wat positieve "vibes" ten huize Zwaan ervaren. Nog heel veel succes met al jullie plannen.
-                <p>
-                  <p><strong>Koen en Kaat</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Lut (kl), 60 jaar! Samen genoten.... Zalig. Een dikke proficiat voor alles wat jullie hier hebben verwezenlijkt. Mooi
-                <p>
-                  <p><strong>Jef en Lut (gr) </strong></p>
-            </div>
-          </div>
-
-          <!-- Page 4 -->
-          <div class="row item">
-            <div class="offset1 span2 recensie">
-              <p>We hebben genoten van jullie prachtige B&amp;B en gastvrijheid en komen zeker nog eens terug. Bedankt!
-                <p>
-                  <p><strong>Adrie, Gerard en Annemarie</strong></p>
-            </div>
-
-            <div class="span5 recensie">
-              <p>Prachtig weer, mooie fietstochten langs het zilverkleurig IJsselmeer, een nieuwe barbeque, ruime gezellige kamers, een praktische keuken, gastvrije B&amp;B eigenaars. Wat kun je nog meer wensen!! We hebben genoten - enorm!
-                <p>
-                  <p><strong>Bart, Marianne, Ann, Chris, Ludo, Lieve, Geert, Christle, Frank. Herdersem</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Na een super feest hier op deze heerlijke plek geslapen en ontbeten. Prachtige kamer, hartelijke ontvangst. Dank voor de goede zorgen en... tot de volgende keer!
-                <p>
-                  <p><strong>Kees en Willy</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 5 -->
-          <div class="row item">
-            <div class="offset1 span2 recensie">
-              <p>Wat een heerlijke plek! Lieve mensen ook! We lkomen zeker een keer terug maar dan met ons zoontje
-                <p>
-                  <p><strong>Groeten Dene Jetjer, Ayan uit Woerden</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>Het is hier te goed en te kort maar we komen zeker nog een keer terug. Te mooi, ontbijt heeeeel goed
-                <p>
-                  <p><strong>Patrick uit Kapellen</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Het tweede familieweekend van de Fransens doorgebracht in deze prachtige Logerie. Schitterende omgeving, zeer luxe B&amp;B en een gastvrij onthaal door de familie Zwaan. Hartelijk dank, wij komen graag nog eens terug
-                <p>
-                  <p><strong>Familie Fransen uit Maassluis, Spijkernisse en Oostvoorne</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>Verjaardag van mijn vrouw, vooral genoten van de stilte, alleen doorbroken door mijzelf
-                <p>
-                  <p><strong>Gerard M. Borst</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 6 -->
-          <div class="row item">
-            <div class="offset1 span5 recensie">
-              <p>De 22e keer dat wij als "Pinkstergemeente" bij elkaar zijn geweest. Voor Rene de 1e keer. Mooi creatief bezig geweest. "Het meisje met de parel" van Vermeer diverse malen gekopie&euml;rd. Als dank voor de gastvrijheid in dit fraaie onderkomen
-                laten we een "Delfts blauw" Tegeltje achter, met dank aan Rene
-                <p>
-                  <p><strong>De Pinkstergemeente</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>Wat een heerlijke plek! Goed verzorgd, heerlijke bedden en een mooi ontbijt. Komen zeker terug
-                <p>
-                  <p><strong>groetjes Patrick en Marlous</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Het was een fantastische overnachting. We zijn met 2 volwassenen en 4 kinderen op fietsvakantie van Stolwijk naar Appingendam. Een hele gastvrije, schone, nette, mooie B&B. Ga zo door
-                <p>
-                  <p><strong>Familie de Jong-Stolwijk</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 7 -->
-          <div class="row item">
-            <div class="offset1 span5 recensie">
-              <p>Driewerf hoera voor deze Bed and Breakfast! Ziet er prachtig uit met heerlijke bedden, super verzorgd!. Nu gaan we zo nog fietsen naar de bollenvelden - het doel van ons bezoek hier - maar ons korte verblijf voelt nu al als een (mini)vakantie
-                <p>
-                  <p><strong>Groeten uit Coevorden van: Jan-Willem, Nicolet, Ivar, Imme, Marre</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Prachtige streek om te fietsen. Naast de weidse open ruimten zijn er ook pittoreske dorpjes.De verzorgde, ruime kamers en de harteljke ontvangst maakten ons weekend compleet. We komen zeker nog eens terug!
-                <p>
-                  <p><strong>L &amp; L</strong></p>
-            </div>
-
-            <div class="span2 recensie">
-              <p>Mooie royale B&amp;B in landelijk gebied. De grote zit-slaapkamers kijken uit op een mooie tuin in aanbouw. Het ontbijt is net als de familie zelf super.</p>
-              <p><strong>Jan Wils en Monica Keunen</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 8 -->
-          <div class="row item">
-            <div class="offset1 span10 recensie">
-              <p>Dear Family<br />It has been a privilege to be guests of this beautiful house and to be cared by this family. Thank you very much for your attentions everyday and for your smile in the morning. The beds were comforable. Congratulations for
-                De Logerie! We promise to come back.</p>
-              <p><strong>Love from family Alaer</strong></p>
-              <p>Thank you for my birthday cake!!! I liked it. Isabel<br />Thanks for the tulips</p>
-            </div>
-          </div>
-
-          <!-- Page 9 -->
-          <div class="row item">
-            <div class="offset1 span5 recensie">
-              <p>Lieve Lut, Helena en Kathelijn,<br />Wat hebben jullie er een prachtige B&amp;B van gemaakt! We hebben heerlijk gegeten, gebadderd en geslapen. Fijne omgeving, gezellig Enkhuizen. Door jullie warme welkom en goede zorgen was onze overnachting
-                een klein feestje. Bedankt en alle goeds voor de toekomst!</p>
-              <p><strong>Peter en Annelies</strong></p>
-            </div>
-
-            <div class="span5 recensie">
-              <p>Een heerlijk adres waar men door de gastvrouw in de watten gelegd wordt. Mooie, ruime en comfortabele kamers waar men verwelkomd wordt met een speciale attentie. Geen enkele moeite is te veel om de gasten te verwennen. Men geniet er van
-                een uitgebreid ontbijt, ook in glutenvrije versie te bekomen. Ook voor een picknick kan gezorgd worden. Wandel- en fietsroutes zijn beschikbaar. Een plek om te genieten en tot rust te komen.</p>
-              <p><strong>Erik en Marleen Vroman uit Belgi&euml;</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 10 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>Bedankt voor de hartelijke ontvangst. Een heerlijke en mooie accommodatie hebben jullie. Na lekker geslapen te hebben en een heerlijk ontbijt zetten we onze fietstocht rond het IJsselmeer weer voort.</p>
-              <p><strong>Dames uit de Zaan</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Sehr schönes Zimmer, Schönes Ambiente und ei tolles Frühstück. De Logerie ist Toll. Vielen Dank für ein tolles Frühstuck, eine schöne Übernachtung und einen guten urlaubseinstieg.</p>
-              <p><strong>Andrea &amp; Philipp</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Dank je wel voor de perfecte overnachting. We hebben heerlijk geslapen, heerlijk gegeten en ons prima vermaakt. De kamers zijn smaakvol ingericht en het ontbijt was om je vingers bij af te likken!</p>
-              <p><strong>Groeten Simone, Sylvan, Karen, Hans</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 11 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>We enjoyed our stay very much. The rooms are very nice and comfortable. Breakfast was delicious. Thank You!</p>
-              <p><strong>David and Ron Portland, Oregon, USA</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Vielen Dank für die schönen Tage in dieser tollen Unterkunft. Zimmer und Frühstück Perfekt.</p>
-              <p><strong>Familie Bickel</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Begrüßt wurden wir mit Regen, doch bald kam die Sonne, welch Segen! Die Zimmer sind ein Traum, wunderschön. Kathelijns Frühstück hat uns sehr geschmeckt, mit einen Satz: Es war alles Perfekt! </p>
-              <p><strong>Liebe Gruße aus Wien!</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 12 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>Es war großartig! Zimmer, Essen, Gastfreundschaft – alles wunderbar. Dank der, kleinen Dine und der herzensguten Familie haben wir uns sehr wohl gefühlt. </p>
-              <p><strong>Marc und Kristina</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Direct na aankomst eergisteren besloten wij een extra nacht bij te boeken. De kamers zijn ruim en smaakvol ingericht, de gastvrouw is bijzonder hartelijk en het ontbijt heerlijk! Wij gaan deze bed and breakfast zeker aanbevelen aan veel
-                kennissen en hopen zelf ook nog een keer terug te komen! Met dank en veel succes met de onderneming.</p>
-              <p><strong>Myra en Gerard, Amsterdam</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Vielen lieben Dank für die schöne Wochenende! Wir haben uns die Zeit sehr genossen. Danke für die Gastfreundlichkeit und das gute frühstück!</p>
-              <p><strong>Groetjes Fam. Achmann – Hester – Vandeweyer</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 13 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>De mooie Bed and Breakfast, het prachtige ontbijt, maar vooral de grote hartelijkheid en gastvrijheid gaven een warme kleur aan ons verblijf te Enkhuizen. Zeker een aanrader. Hartelijk dank.</p>
-              <p><strong>Moniek en Hendrik</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Een hele mooie Bed and Breakfast. Acht dagen op fietsvakantie. Altijd een verrassing waar we gaan slapen en ontbijten. Onze laatste nacht via Enkhuizen – Stavoren en naar huis. Zo’n mooi plekje hadden wij nog niet gehad. Een dikke 10 met
-                een griffel.</p>
-              <p><strong>Familie Haitjema en Familie Tjalsma</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>De Logerie is in 1 woord: FANTASTISCH! Leuke ontvangst, mooie kamers, prachtige omgeving, fijne mensen, kortom teveel om op te noemen. Bedankt voor de gastvrijheid, de fietsen en de heerlijke lasagne! Vergeet jullie Cognac niet aan te vullen!
-                Wij komen zeker terug!</p>
-              <p><strong>Groetjes van Pieter, Ruth en Lili</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 14 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>5 stars are not enough; you deserve a whole sky full! Rooms are superb, breakfast terrific, hospitality wonderful, Thank you! </p>
-              <p><strong>David</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>“De verrassing van w.Friesland” Wat een ontdekking Bed and breakfast is voor ons nieuw. Super bevallen gastvrij, schoon lekker dus dik 5 sterren waard. Wij hebben ervan genoten. Zelfs met 14 personen worden jullie niet zenuwachtig! Succes
-                en op naar het 1e lustrum.</p>
-              <p><strong>Familie Bockel, Hooft en Beurden</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>We were greated like Kings. We were treated like Kings. We slept like Kings. We eat like Kings. We reallu enjoyed to be here!!!</p>
-              <p><strong>Andrea, Fred and Marie, Dortmund Germany</strong></p>
-            </div>
-          </div>
-
-          <!-- Page 15 -->
-          <div class="row item">
-            <div class="offset1 span3 recensie">
-              <p>Wat hebben wij genoten! We zouden het liefst de slaap- en badkamer mee naar huis nemen. Heerlijk ontspannen gaan we weer naar huis. Bedankt voor alle zorgen en we komen vast nog een keer terug!</p>
-              <p><strong>Liefs, Femke en Martijn de Moor</strong></p>
-            </div>
-
-            <div class="span3 recensie">
-              <p>Geachte Familie we zijn hier voor een tweede keer geweest, niets anders dan lof voor alles. Hopen hier nog heel vaak te komen.</p>
-              <p><strong>Veel groeten Fam. Jansen</strong></p>
-            </div>
-
-            <div class="span4 recensie">
-              <p>Zeer mooie Bed and Breakfast, waarbij opvalt hoe ruim en licht de kamers zijn. Zeer vriendelijke ontvangst door de familie waarbij het uitmuntende bijna persoonlijk geserveerde ontbijt geen betere start van de dag mogelijk maakt. Keurige
-                en ook nog zeer betaalbare Bed and Breakfast op een rustige locatie. Kom hier zeker nog terug. Tot ziens!</p>
-              <p><strong>Marco van de Velde</strong></p>
-            </div>
-          </div>
-
-          <!-- End of carousel pages -->
-        </div>
-        <a class="carousel-control left" href="#recensies-carousel" data-slide="prev">&lsaquo;</a>
-        <a class="carousel-control right" href="#recensies-carousel" data-slide="next">&rsaquo;</a>
-      </div>
-    </div>
-
-    <!-- Surroundings -->
-    <div id="omgeving">
-      <div class="row">
-        <div class="span12">
-          <h1><span>Enkhuizen en omgeving</span></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span6">
-          <ul class="thumbnails">
-            <li>
-              <a href="img/1_Enkhuizen.jpg" title="" id="tn1" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/2_zuiderzeemuseum.jpg" title="" id="tn2" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/3_Stoomtrein.jpg" title="" id="tn3" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/4_enkhuizen.jpg" title="" id="tn4" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/5_Reus.jpg" title="" id="tn5" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/6_Molen.jpg" title="" id="tn6" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/7_Streekbos.jpg" title="" id="tn7" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/8_Sprookjeswonderland.jpg" title="" id="tn8" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/9_Zuiderzee.jpg" title="" id="tn9" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/10_IJsselmeerdijk.jpg" title="" id="tn10" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/11_Oudehaven.jpg" title="" id="tn11" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-            <li>
-              <a href="img/12_Drommedaris.jpg" title="" id="tn12" class="fancybox thumbnail" rel="omgeving"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="span6">
-          <p>Door haar VOC historie zijn er in de stad Enkhuizen veel interessante historische bezienswaardigheden. Enkhuizen is ook ideaal als uitvalsbasis voor het bezoeken van Bataviastad of de Bataviawerf in Lelystad, de historische stad Hoorn, de kaasmarkt
-            in Alkmaar of de vissersdorpen Volendam, Marken of Edam.
-
-            <h2>Het Zuiderzeemuseum</h2>
-            <p>Het openluchtmuseum laat je zien, horen, proeven en voelen hoe de mensen in het Zuiderzee gebeid leefde van ongeveer 1880 tot 1930. Meer informatie: <a href="http://www.zuiderzeemuseum.nl">www.zuiderzeemuseum.nl</a></p>
-
-            <h2>Sprookjeswonderland</h2>
-            <p>Naast een wandeltocht langs allerlei sprookjes is er in dit fantasiepark een kinderboerderij, een kasteel met de voorstelling Violinde, een speeltuin, dobberbootjes, een doolhof, volières en nog veel meer. Meer informatie: <a href="http://www.sprookjeswonderland.nl">www.sprookjeswonderland.nl</a></p>
-
-            <h2>Historische driehoek</h2>
-            <p>Ontdek de historische Zuiderzee met de historische stoomtreinlijn. Meer informatie: <a href="http://www.museumstoomtram.nl">www.museumstoomtram.nl</a></p>
-
-            <h2>Fiets en wandelroutes</h2>
-            <p>De Westfriese Omringdijk een prachtig 126 km lang lint door het Noord-Hollandse landschap. <a href="http://www.westfrieseomringdijk.nl">www.westfrieseomringdijk.nl</a>. Meer routes: <a href="http://www.vvvenkhuizen.nl">www.vvvenkhuizen.nl</a>              <a href="http://www.routeyou.com">www.routeyou.com</a>.</p>
-
-            <h2>Streekbos</h2>
-            <p>Naast De Logerie ligt recreatiegebied Het Streekbos waar u kunt zwemmen, varen, vissen, wandelen, fietsen, eten en drinken of naar de sterren kijken in het planetarium. Meer informatie: <a href="http://www.recreatieschapwestfriesland.nl">www.recreatieschapwestfriesland.nl</a>              <a href="http://www.volkssterrenwachtorion.nl">www.volkssterrenwachtorion.nl</a></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- /container -->
-
-  <!-- Contact -->
-  <div id="contact">
-    <div id="contact-inner">
-      <div class="container">
-        <div class="row">
-          <div class="span2">
-            <h2>Contactgegevens</h2>
-            <p>Heeft u vragen of wilt u bij ons boeken? U kunt altijd contact met ons opnemen.</p>
-            <address>
-                        <div class="vcard">
-                            <div class="org">De Logerie</div>
-                            <div class="adr">
-                                <div class="street-address">De Gouw 46e</div>
-                                <span class="postal-code">1602 DN</span>
-                                <span class="locality">Enkhuizen</span>
-                            </div>
-                            <a class="email" href="mailto:info@logerie.nl">info@logerie.nl</a>
-                            <div class="tel">+31(0)6 44296713</div>
-                        </div>
-                        </address>
-          </div>
-
-          <div id="formContainer" class="span4">
-            <h2>Stuur ons een bericht</h2>
-            <form action="" method="post" enctype="text/plain">
-              <label>Naam <input type="text" name="fullname"></label>
-              <label>Adres <input type="text" name="street"></label>
-              <label>Plaats <input type="text" name="city"></label>
-              <label>Tel.nr. <input type="text" name="phonenumber"></label>
-              <label>Email <input type="text" name="email"></label>
-              <label>Uw bericht <textarea name="message" rows="6"></textarea></label>
-              <label><input type="button" id="versturen" value="Versturen"></label>
-            </form>
-          </div>
-
-          <div class="span3">
-            <h2>Betalingen</h2>
-            <p>Naast contant kunt u bij ons ook met Visa, Mastercard of Pin betalen</p>
-            <ul>
-              <li><img src="img/Visa.png" alt="Visa"></li>
-              <li><img src="img/Mastercard.png" alt="Mastercard"></li>
-              <li><img src="img/Pin.png" alt="Maestrov/ Pin"></li>
-            </ul>
-          </div>
-          <div class="span3">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/vendor/jquery-1.8.3.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/fancybox.pack.js?v=2.1.3"></script>
-  <script src="js/main.js"></script>
-  <script src="https://dashboard.vakantieadressen.nl/js/frontend/widget-iframe.js"></script>
-</body>
-
+    </footer>
+  </body>
 </html>
