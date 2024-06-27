@@ -255,7 +255,7 @@ section#onze-kamers {
   & > div {
     max-width: 100%;
     display: flex;
-    gap: 0.5rem;
+    gap: calc(var(--gap) * 2);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 
@@ -263,13 +263,7 @@ section#onze-kamers {
       display: contents;
     }
     & h3 {
-      margin: 0;
-      margin-left: 1rem;
-      width: auto;
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      text-align: right;
-      scroll-snap-align: center;
+      display: none;
     }
     & picture {
       flex: 0 0 100%;
@@ -278,40 +272,27 @@ section#onze-kamers {
   }
 }
 
-/* 
-#onze-kamers > div {
-  margin-top: var(--gap);
-  margin-left: calc(-1 * var(--gap));
-  margin-right: calc(-1 * var(--gap));
-  overflow-x: scroll;
-
-  display: flex;
-  flex-flow: row nowrap;
-  gap: var(--gap);
-}
-#onze-kamers h3 {
-  position: sticky;
-  left: var(--gap);
-  width: fit-content;
-}
-#onze-kamers article div {
-  display: flex;
-  flex-flow: row nowrap;
-  gap: var(--gap);
-}
-#onze-kamers article div img {
-  width: 80vw;
-  height: auto;
-}
-#onze-kamers article:first-of-type {
-  padding-left: var(--gap);
-}
-#onze-kamers article:last-of-type {
-  padding-right: var(--gap);
-} */
-
 /* OMGEVING */
-#de-omgeving {
+section#de-omgeving {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--gap);
+
+  & > div {
+    flex-basis: 100%;
+  }
+
+  & article {
+    border-radius: var(--gap);
+    padding: calc(2 * var(--gap));
+    color: var(--dune);
+  }
+  & article:nth-child(odd) {
+    background: var(--green);
+  }
+  & article:nth-child(even) {
+    background: var(--purple);
+  }
 }
 
 /* FOOTER */
@@ -348,17 +329,17 @@ footer nav li:first-of-type a {
 }
 footer .directions {
   color: var(--dune);
+  padding: calc(var(--gap) * 2);
 }
 footer .map,
 footer .address {
-  padding: var(--gap);
 }
 footer .directions h2,
 footer .directions p {
   margin-bottom: var(--gap);
 }
 footer .directions p {
-  max-width: 18rem;
+  max-width: 14rem;
 }
 footer div.org {
   font-weight: bold;
@@ -368,7 +349,7 @@ footer div.adr {
 }
 
 /* Ken Burns style slideshow */
-/*
+/* 
 section.slideshow {
   position: relative;
   width: 100vw;
@@ -473,5 +454,4 @@ section.slideshow img:nth-child(4) {
     opacity: 0;
     transform: scale(1);
   }
-}
-*/
+} */
