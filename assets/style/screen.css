@@ -181,6 +181,9 @@ table.prices {
     font-weight: normal;
     font-size: 0.8rem;
   }
+  & td.price {
+    white-space: nowrap;
+  }
 }
 sup {
   font-size: inherit;
@@ -252,7 +255,7 @@ section#onze-kamers {
   background: var(--purple);
   color: var(--dune);
 
-  & > div {
+  & > div.photos {
     max-width: 100%;
     display: flex;
     gap: calc(var(--gap) * 2);
