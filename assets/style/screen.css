@@ -7,7 +7,6 @@
 }
 
 :root {
-  /* dune */
   --dune-900: #040302;
   --dune-775: #1e1813;
   --dune-675: #3d332a;
@@ -18,7 +17,6 @@
   --dune-100: #e7dcd2;
   --dune: var(--dune-225);
 
-  /* purple */
   --purple-900: #050303;
   --purple-775: #231519;
   --purple-675: #3b252c;
@@ -29,7 +27,6 @@
   --purple-100: #e7dade;
   --purple: var(--purple-675);
 
-  /* green */
   --green-900: #030401;
   --green-775: #151d07;
   --green-675: #2e3b14;
@@ -40,7 +37,6 @@
   --green-100: #c7ef7d;
   --green: var(--green-550);
 
-  /* orange */
   --orange-900: #0a0100;
   --orange-775: #320a01;
   --orange-675: #611900;
@@ -51,7 +47,6 @@
   --orange-100: #fbd4c9;
   --orange: var(--orange-325);
 
-  /* black */
   --black-900: #030303;
   --black-775: #141414;
   --black-675: #353535;
@@ -64,12 +59,6 @@
 
   --white: #fafafa;
 
-  --color: var(--black);
-  --bg-top: var(--dune);
-  --bg-bottom: var(--dune-325);
-  --highlights: var(--orange);
-
-  --angle: 45deg;
   --gap: 0.5rem;
 }
 
@@ -121,15 +110,15 @@ body {
 html,
 main img {
   background-color: var(--bg-fg);
-  background-image: linear-gradient(var(--angle), var(--bg-top) 20%, var(--bg-bottom) 100%);
+  background-image: linear-gradient(var(45deg), var(--dune) 20%, var(--dune-325) 100%);
 }
 body {
   font-family: 'Literata', serif;
   font-optical-sizing: auto;
   font-variant-numeric: oldstyle-nums;
   font-weight: 400;
-  line-height: 1.3;
-  color: var(--color);
+  line-height: 1.5;
+  color: var(--black);
 }
 h1,
 h2,
@@ -182,26 +171,46 @@ table.prices {
     white-space: nowrap;
   }
 }
+details {
+  margin: var(--gap) 0;
+  padding: var(--gap);
+  border-radius: var(--gap);
+  background: var(--color);
+  color: var(--background);
 
-div.photos {
-  max-width: 100%;
-  display: flex;
-  gap: calc(var(--gap) * 2);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  & summary {
+    font-weight: bold;
+  }
 
-  & article {
-    display: contents;
+  & ul {
+    padding: 1rem;
+
+    & li::marker {
+      font-size: 0.7rem;
+    }
   }
-  & h3 {
-    display: none;
-  }
-  & p {
-    display: none;
-  }
-  & picture {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
+}
+
+/* Single caroussel per item on mobile */
+@media (max-width: 30rem) {
+  div.photos {
+    max-width: 100%;
+    display: flex;
+    gap: calc(var(--gap) * 2);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    & article {
+      display: contents;
+    }
+    & h3,
+    & p {
+      display: none;
+    }
+    & picture {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+    }
   }
 }
 
@@ -242,8 +251,10 @@ header nav a {
   font-size: 1.2rem;
 }
 
-main section {
+section {
   padding: 1.2rem calc(var(--gap) * 2);
+  background: var(--background, var(--dune));
+  color: var(--color, var(--black));
 }
 
 /* HERO */
@@ -253,20 +264,20 @@ section#hero {
 
 /* HOTEL B&B */
 section#hotel-bed-and-breakfast {
-  background: var(--purple);
-  color: var(--dune);
+  --background: var(--purple);
+  --color: var(--dune);
 }
 
 /* GROEPSACCOMODATIE */
 section#groepsaccommodatie {
-  background: var(--green-675);
-  color: var(--dune);
+  --background: var(--green-675);
+  --color: var(--dune);
 }
 
 /* KAMERS */
 section#onze-kamers {
-  background: var(--purple);
-  color: var(--dune);
+  --background: var(--purple);
+  --color: var(--dune);
 }
 
 /* OMGEVING */
