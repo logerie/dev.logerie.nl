@@ -23,12 +23,12 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
     <title>De Logerie &middot; Hotel &middot; Bed &amp; Breakfast in Enkhuizen</title>
 
     <link rel="canonical" href="https://logerie.nl/" />
-    <!-- <meta name="color-scheme" content="light dark" /> -->
     <link rel="icon" type="image/svg+xml" href="./assets/image/logerie-logo.svg" />
     <link rel="stylesheet" type="text/css" href="./assets/style/screen.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./assets/style/print.css" media="print" />
-    <script src="./assets/script/main.js" defer></script>
 
+    <!-- <script src="./assets/script/main.js" defer></script> -->
+    <!-- <meta name="color-scheme" content="light dark" /> -->
     <meta name="robots" content="index, follow" />
     <meta name="title" content="Logerie Bed &amp; Breakfast" />
     <meta name="description" content="Logerie Bed &amp; Breakfast te Enkhuizen" />
@@ -48,7 +48,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
       <nav>
         <ul>
           <li><a href="#hotel-bed-and-breakfast">Hotel &middot; Bed & Breakfast</a></li>
-          <li><a href="#groepsaccomodatie">Groepsaccommodatie</a></li>
+          <li><a href="#groepsaccommodatie">Groepsaccommodatie</a></li>
           <li><a href="#onze-kamers">Onze kamers</a></li>
           <li><a href="#de-omgeving">De omgeving</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -133,34 +133,34 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
             <tbody>
               <tr>
                 <th>Eenpersoonskamer</th>
-                <td class="price">€ 99,-</td>
+                <td class="price">€ 99</td>
               </tr>
               <tr>
                 <th>Tweepersoonskamer</th>
-                <td class="price">€ 118,-</td>
+                <td class="price">€ 118</td>
               </tr>
               <tr>
                 <th>Driepersoonskamer</th>
-                <td class="price">€ 149,-</td>
+                <td class="price">€ 149</td>
               </tr>
               <tr>
                 <th>Vierpersoonskamer</th>
-                <td class="price">€ 175,-</td>
+                <td class="price">€ 175</td>
               </tr>
             </tbody>
           </table>
 
-          <p>
+          <p class="conditions">
             Inclusief: Luxe ontbijt, bed- en badlinnen, toiletartikelen, dagelijkse schoonmaak en gratis thee en koffie
             gedurende het verblijf.
           </p>
-          <p>Exclusief: Gebruik van de keuken en toeristenbelasting &aacute; € 2,75 p.p.p.n</p>
+          <p class="conditions">Exclusief: Gebruik van de keuken en toeristenbelasting &aacute; € 2,75 p.p.p.n</p>
         </div>
 
-        <div class="photos">
+        <div class="deck">
           <article class="slide">
             <h3>Bed & Breakfast</h3>
-            <p></p>
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -398,8 +398,8 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
         <div>
           <h2>Tarieven 2024</h2>
           <p>
-            Onderstaande tarieven zijn op basis van 10 personen, voor de 11e tot 16e persoon rekenen wij &euro; 35,-
-            p.p.p.n extra
+            Onderstaande tarieven zijn op basis van 10 personen, voor de 11e tot 16e persoon rekenen wij € 35 p.p.p.n
+            extra
           </p>
 
           <table class="prices">
@@ -408,19 +408,19 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
                 <th>
                   Weekend <span>(vr. 15.00 - zo. 12.00)<sup>*</sup></span>
                 </th>
-                <td class="price">€ 1397,50</td>
+                <td class="price">€ 1397</td>
               </tr>
               <tr>
                 <th>Lang weekend <span>(vr. 15.00 - ma. 11.00)</span></th>
-                <td class="price">€ 1485,-</td>
+                <td class="price">€ 1485</td>
               </tr>
               <tr>
                 <th>Midweek <span>(ma. 15.00 - vr. 11.00)</span></th>
-                <td class="price">€ 1904,-</td>
+                <td class="price">€ 1904</td>
               </tr>
               <tr>
                 <th>Week</th>
-                <td class="price">€ 2945,-</td>
+                <td class="price">€ 2945</td>
               </tr>
               <tr>
                 <td class="small" colspan="3"><sup>*</sup> alleen in het laagseizoen van november t/m maart</td>
@@ -428,15 +428,17 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
             </tbody>
           </table>
 
-          <p>
+          <p class="conditions">
             Inclusief: Bedlinnen, 1 set badlinnen (€ 4 per extra set), water/ elektra, gebruik van de keuken en
             schoonmaakkosten.
           </p>
 
-          <p>Exclusief: Gas, toeristenbelasting &aacute; € 2,75 p.p.p.n, feestdagentoeslag en borg van € 200.</p>
+          <p class="conditions">
+            Exclusief: Gas, toeristenbelasting &aacute; € 2,75 p.p.p.n, feestdagentoeslag en borg van € 200.
+          </p>
         </div>
 
-        <div class="photos">
+        <div class="deck">
           <article class="slide">
             <h3>Overkapping en tuin</h3>
             <p></p>
@@ -494,8 +496,8 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
           </article>
 
           <article class="slide">
-            <h2></h2>
-            <p>Algemene ruimtes</p>
+            <h2>Algemene ruimtes</h2>
+            <p>Keuken / eetzaal, zitruimte</p>
             <picture>
               <source
                 srcset="
@@ -582,10 +584,10 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
           </p>
         </div>
 
-        <div class="photos">
+        <div class="deck">
           <article class="slide">
             <h3>Alchemilla</h3>
-
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -653,7 +655,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
 
           <article class="slide">
             <h3>Blue Magic</h3>
-
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -724,7 +726,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
 
           <article class="slide">
             <h3>Polar Ice</h3>
-
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -795,6 +797,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
 
           <article class="slide">
             <h3>Duchesse</h3>
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -865,6 +868,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
 
           <article class="slide">
             <h3>Red Charm</h3>
+            <p>...korte tekst...</p>
             <picture>
               <source
                 srcset="
@@ -987,9 +991,11 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
           <a href="https://www.routeyou.com/">routeyou.com</a>
         </article>
       </section>
+
+      <div id="contact"></div>
     </main>
 
-    <footer id="contact">
+    <footer>
       <nav>
         <ul>
           <li>
@@ -1053,7 +1059,6 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
       </nav>
 
       <div class="directions">
-        <div class="map"></div>
         <div class="address">
           <h2>Contactgegevens</h2>
           <p>Heeft u vragen of wilt u bij ons boeken? U kunt altijd contact met ons opnemen.</p>
@@ -1070,6 +1075,7 @@ menselijke vindingrijkheid met,8"  8I zuivere html, css en javascript.
             </div>
           </address>
         </div>
+        <div class="map"></div>
       </div>
     </footer>
   </body>
